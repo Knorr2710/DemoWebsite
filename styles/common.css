@@ -49,6 +49,11 @@ p
 	line-height: 1.25;
 }
 
+p.indent
+{
+	text-indent: 30px;
+}
+
 
 hr
 {
