@@ -7,7 +7,7 @@ body
 	margin: 0;
 	padding: 0;
 	color: #262626;
-	background-color: #ecedea;
+	background-color: #e1e3de;
 	font: 1em/1.2 "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
 }
 
@@ -75,7 +75,7 @@ a:active { color: #ff544f; }
 header
 {
 	color: white;
-	background: #004192;
+	background: #165cb1;
 	padding: 1em 1.25em;
 }
 
