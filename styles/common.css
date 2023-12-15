@@ -54,6 +54,16 @@ p.indent
 	text-indent: 30px;
 }
 
+img.myphoto
+{
+	border: 5px solid #555;
+}
+
+img.programmap
+{
+	border-style: inset;
+}
+
 
 hr
 {
