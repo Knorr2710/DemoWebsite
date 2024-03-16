@@ -127,3 +127,21 @@ main > h1 {
 	border-radius: 5px;
 	width: 300px;
 }
+
+button {
+	background-color: #00af8f;
+	border: 1px solid gray;
+	border-radius: 5px;
+	color: whitesmoke;
+	padding: 10px 20px;
+	margin: 20px 0;
+}
+
+button > a {
+	text-decoration: none;
+	color: whitesmoke;
+}
+
+button:hover {
+	background-color: gray;
+}
