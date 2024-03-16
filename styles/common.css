@@ -1,3 +1,7 @@
+html {
+	font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
 main {
 	display: flex;
   	flex-direction: column;
@@ -103,6 +107,10 @@ td {
 	width: 200px;
 	border-radius: 5px;
 	border: 1px solid gray;
+}
+
+.container > h2 {
+	/*Add later on*/
 }
 
 main > h1 {
