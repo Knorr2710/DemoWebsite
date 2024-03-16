@@ -34,6 +34,8 @@ header > nav > ul > li > a {
   text-decoration: none;
   color: whitesmoke;
   padding: 5px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 header > nav > ul > li > a:hover {
@@ -60,6 +62,7 @@ header > nav > ul > li > a.selected {
 	border: 1px solid #e7e7e7;
 	border-radius: 5px;
 	width: 400px;
+	padding: 20px;
 	text-align: center;
 	margin: 0 auto;
 }
@@ -78,6 +81,12 @@ header > nav > ul > li > a.selected {
 	border-radius: 5px;
 	padding: 10px 20px;
 	margin: 20px 0 20px 0;
+	transition: 0.2s ease-in-out;
+}
+
+.profile .follow-button:hover {
+	background-color: #e7e7e7;
+	transition: 0.2s ease-in-out;
 }
 
 table {
@@ -140,8 +149,11 @@ button {
 button > a {
 	text-decoration: none;
 	color: whitesmoke;
+	transition: 0.2s ease-in-out;
 }
 
 button:hover {
 	background-color: gray;
+	transition: 0.2s ease-in-out;
 }
+
