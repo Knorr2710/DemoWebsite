@@ -1,107 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- <meta name="viewport" content="width=device-width, initial scale=1" /> -->
+    <meta name="viewport" content="width=device-width, initial scale=1" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Hung Vu - Homepage</title>
+    <title>Hung Vu</title>
     <link rel="stylesheet" type="text/css" href="styles/common.css" />
     <script src="https://kit.fontawesome.com/9ec7425c6f.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="images/logo.png">
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>Vu Dam Khanh Hung</h1>
-            <h5 id="quals">Information Technology</h5>
-            <div id="subinfo">Undergraduate Student</div>
-            <div id="subinfo">Enterprise System Development</div>
-            <div id="subinfo">RMIT University</div>
-            <br>
+        <nav>
+            <ul>
+                <!--<li id="logo"><a href="index.html"><img src="images/logo.png" width="15px"></a></li>-->
+                <li><a class="" href="index.html">Home</a></li>
+                <li><a class="selected" href="memories.html">Memories</a></li>
+                <li><a class="" href="music.html">Music</a></li>
+                <li><a class="" href="travels.html">Travels</a></li>
+            </ul>
+        </nav>
+</header>
+    <main>
+        <h1>Profile</h1>
+        <div class="note">
+            <p>
+                Note: This website is under construction. However, feel free to check as I am using my coding skills to make it better everyday.
+            </p>
+            <p>
+                Work list:
+            </p>
+            <ul>
+                <li>Adding more content</li>
+                <li>Improving the design - using CSS</li>
+                <li>Adding more features</li>
+                <li>Learning Javascript, media query to make the web works for any kind of devices</li>
+            </ul>
+            <date> Last updated: 16-03-2024</date>
+            <br><br>   
         </div>
-    </header>
-
-    <nav>
-        <ul>
-            <li><a class="selected" href="index.html">Biography</a></li>
-            <li><a class="" href="memories.html">Memories</a></li>
-            <li><a class="" href="music.html">Music</a></li>
-            <li><a class="" href="travels.html">Travels</a></li>
-            <!-- <li><a class="" href="movies.html">Moives</a></li> -->
-            <!-- <li><a class="" href="games.html">Games</a></li> -->
-        </ul>
-    </nav>
-
-    <div id="page">
-        <aside>
-            <div class="container">
-                <div>
-                    <img class="myphoto" src="https://scontent.fsgn2-3.fna.fbcdn.net/v/t39.30808-6/428619995_1803195493528179_4297674881500831601_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHGXpdoqc417-9hoH05Q5VJT4b9KgSLfIFPhv0qBIt8gbAREQD_JlFlkt9zsMZ9w5m6nopZO-B_sco_2BRXSRjl&_nc_ohc=HKrk4hVJG_cAX8DhCUJ&_nc_ht=scontent.fsgn2-3.fna&oh=00_AfD0KRhTsbgQ86ra9f0wSY2gzqwmaI0u9m4nynsfXhjN_Q&oe=65F84FFD" alt="Hung Vu" height="150px">
-                </div>
-                <p>
-                    <h3>Contacts</h3>
-                    <ul>
-                        <li><a href="https://www.facebook.com/vu.rain.562" style="text-decoration:none" target="_blank"><i class="fa-brands fa-facebook"></i>Facebook</a></li>
-                        <li><a href="https://www.instagram.com/_kros.s/" style="text-decoration:none" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
-                    </ul>
-                </p>
+        <div class="profile">
+            <img id="kross-photo" src="images/kross.jpg" alt="Kross's Profile Photo" width="250px">
+            <h2>Hung Vu</h2>
+            <p>Enterprise Development</p>
+            <p>RMIT University</p>
+            <div class="follow-button">
+                <a href="https://www.facebook.com/hung.vu.9210256" target="_blank"><i class="fab fa-facebook"></i></a>
             </div>
-        </aside>
-
-        <section>
-            <div class="container">
-                <br>
-                <h2>About me</h2>
-                <p>
-                    Currently, I am learning programming languages such as Javascript, HTML, CSS and SQL as part of my studies.
-                    <ul>
-                        <li>Nickname: Kross Vu</li>
-                        <li>Birthday: 27/10/2004</li>
-                        <li>From: Hai Phong, Vietnam</li>
-                        <li>Where: Ho Chi Minh City</li>
-                    </ul>
-                </p>
-                <hr />
-                <h2>Courses</h2>
-                <p>
-                    Courses I have finished up to now:
-                    <ol>
-                        <li>COSC2083 - Essentials of Information Technology</li>
-                        <li>COSC2429 - Introduction to Programming</li>
-                        <li>ISYS3414 - Practical Database Concepts</li>
-                        <li>COSC3054 - Programming Bootcamp 1</li>
-                        <li>COSC3056 - Programming Studio 1</li>
-                    </ol>
-                </p>
-                <p>
-                    Courses I am pursuing:
-                    <ol>
-                        <li>COSC3058 - Web Programming Bootcamp (In Progress)</li>
-                    </ol>
-                </p>
-                    <figure>
-                        <img class="programmap" src="images/programmap.png" height="650px" />
-                        <figcaption>Enterprise System DEV Minor & IT courses</figcaption>
-                    </figure>
-                <hr />
-                <h2>SEUP</h2>
-                <p>
-                    Before becoming an IT student, I spent a year learning and improving my English. It was a wonderful time, marking my first exposure to an international study environment. I have learned a lot since then.
-                </p>
-                <div class="image-block">
-                    <figure>
-                        <img class="myphoto" src="images/SEUP.jpg" height="300px" />
-                        <figcaption>Me with my classmates in SEUP (2022)</figcaption>
-                    </figure>
-                </div>
+            <div class="follow-button">
+                <a href="https://www.instagram.com/hungvu_1999/" target="_blank"><i class="fab fa-instagram"></i></a>
             </div>
-            <br>
-        </section>
-    </div>
-
-    <footer>
-        <div class="container">
-            Last Updated: <time datestamp="2024-03-15">March, 2024</time>
         </div>
-    </footer>
+
+        <div class="about-me">
+            <h2>About me</h2>
+            <table>
+                <tr>
+                    <td><p class="skills"><i class="fas fa-book mr-1"></i> Education</p></td>
+                    <td><p>B.S. in Information Technology from RMIT University</p></td>
+                </tr>
+                <tr>
+                    <td><p class="skills"><i class="fa-solid fa-location-dot"></i> Location</p></td>
+                    <td><p>Ho Chi Minh City, Vietnam</p></td>
+                </tr>
+                <tr>
+                    <td><p class="skills"><i class="fa-solid fa-pencil"></i> Skills</p></td>
+                    <td><p>Unknown</p></td>
+                </tr>
+            </table>
+        </div>
+    </main>
 </body>
 </html>
