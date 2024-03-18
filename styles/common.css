@@ -5,9 +5,14 @@ html {
 }
 
 footer {
-
-
 }
+
+hr {
+	border: dotted blue 6px;
+	border-bottom: none;
+	width: 4%;
+	margin: 105px auto;
+  }
 
 main {
 	display: flex;
