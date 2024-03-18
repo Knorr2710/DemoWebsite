@@ -38,6 +38,7 @@ header > nav > ul > li {
   display: inline;
   margin: 0 20px;
   padding: 15px 0 15px 0;
+  transition: 0.2s ease-in-out;
 }
 
 header > nav > ul > li > a {
@@ -170,6 +171,21 @@ button:hover {
 }
 
 /*bugg vcl*/
+
+@media only screen and (max-width: 768px) {
+	header > nav > ul > li {
+		margin: 0 10px;
+		transition: 0.2s ease-in-out;
+	}
+
+	.profile {
+		width: 300px;
+	}
+
+	.profile #kross-photo {
+		width: 50%;
+	}
+}
 
 .container .profile div h1 {
 	text-align: center;
