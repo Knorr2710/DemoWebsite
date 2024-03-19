@@ -41,7 +41,6 @@ header > nav > ul > li {
   display: inline;
   margin: 0 20px;
   padding: 15px 0 15px 0;
-  transition: 0.2s ease-in-out;
 }
 
 header > nav > ul > li > a {
@@ -69,6 +68,12 @@ header > nav > ul > li > a.selected {
 	justify-content: center;
 }
 
+.container > h1 {
+	text-align: center;
+	text-decoration: underline;
+	margin: 30px 0;
+}
+
 .profile {
 	display: flex;
 	color: black;
@@ -83,9 +88,15 @@ header > nav > ul > li > a.selected {
 }
 
 .profile #kross-photo {
-	width: 60%;
+	width: 70%;
 	border-radius: 60%;
 	margin: 20px 0 0 0;
+	transition: 0.2s ease-in-out;
+}
+
+.profile #kross-photo:hover {
+	width: 80%;
+	transition: 0.2s ease-in-out;
 }
 
 .profile .follow-button {
@@ -156,7 +167,6 @@ button:hover {
 @media only screen and (max-width: 768px) {
 	header > nav > ul > li {
 		margin: 0 10px;
-		transition: 0.2s ease-in-out;
 	}
 
 	.profile {
@@ -199,3 +209,47 @@ ul.breadcrumb li a:hover {
 	color: #01447e;
 	text-decoration: underline;
 }
+
+/* shop.html */
+.product-grid {
+	display: grid;
+	width: 100%;
+	margin: 50px 15px 0 15px;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 50px;
+}
+
+.product {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+a > img {
+	border-radius: 5px;
+	width: 275px;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+	
+
+@media screen and (min-width: 900px) {
+	.product-grid {
+		grid-template-columns: repeat(4, 1fr);	
+	}
+	
+}
+
+@media screen and (max-width: 768px) {
+	.product-grid {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
+
