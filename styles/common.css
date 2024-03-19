@@ -244,6 +244,10 @@ a > img {
 	font-size: 14px;
 }
 
+.product-qa img {
+	width: 120%;
+}
+
 a:hover {
 	text-decoration: underline;
 }
