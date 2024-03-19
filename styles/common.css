@@ -107,39 +107,17 @@ table {
 	border-collapse: collapse;
 	margin-left: auto;
 	margin-right: auto;
-	width: auto;
 	color: black;
 }
 
 table, th, td {
 	border: 1px solid black;
-	border-collapse: collapse;
 	text-align: left;
-	padding: 10px
+	padding: 10px;
 }
 
 td {
 	word-wrap: break-word;
-}
-
-.about-me > h2 {
-	background-color: #00af8f;
-	color: whitesmoke;
-	margin: 20px auto;
-	padding: 10px 0;
-	text-align: center;
-	width: 200px;
-	border-radius: 5px;
-	border: 1px solid gray;
-}
-
-.container > h2 {
-	/*Add later on*/
-}
-
-main > h1 {
-	text-decoration: underline;
-	margin: 25px auto;
 }
 
 .note {
@@ -148,12 +126,12 @@ main > h1 {
 
 .note ul {
 	border: 1px solid #000000;
-	border-radius: 5px;
+	border-radius: 15px;
 	width: 300px;
 }
 
 button {
-	background-color: #00af8f;
+	background-color: blue;
 	border: 1px solid gray;
 	border-radius: 5px;
 	color: whitesmoke;
