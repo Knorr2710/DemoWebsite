@@ -1,7 +1,6 @@
 html {
 	font-family: 'Roboto', Arial, Helvetica, sans-serif;
-	background-color: #73a3f0;
-
+	color: black;
 }
 
 footer {
@@ -18,7 +17,6 @@ main {
 	display: flex;
   	flex-direction: column;
   	margin: 0 auto;
-	color: white;
 }
 
 header {
@@ -86,8 +84,7 @@ header > nav > ul > li > a.selected {
 
 .profile #kross-photo {
 	width: 60%;
-	border: 5px solid gray;
-	border-radius: 15px;
+	border-radius: 60%;
 	margin: 20px 0 0 0;
 }
 
@@ -111,6 +108,7 @@ table {
 	margin-left: auto;
 	margin-right: auto;
 	width: auto;
+	color: black;
 }
 
 table, th, td {
