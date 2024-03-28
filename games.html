@@ -20,11 +20,33 @@
         </nav>
     </header>
     <main class="games">
+        <h2>Toggle Button</h2>
         <div id ="pattern">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/SGtYOC15s0w?si=4jd934XkzBAcdWCD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
         <button onclick="togglePattern()" id="togglePattern">Reveal!</button>
-        <script src="script.js"></script>
+        <script src="script.js" defer></script>
+
+        <h2>Add-remove List</h2>
+        <div id="movie-list">
+            <h3>Movies to watch</h3>
+            <ul>
+                <li>
+                    <span class="name">Oppenheimer</span>
+                    <span class="delete">delete</span>
+                </li>
+                
+                <li>
+                    <span class="name">Gran Turismo</span>
+                    <span class="delete">delete</span>
+                </li>
+            </ul>
+        </div>
+        <form id="add-movie" method="post" action="games.html">
+            <input type="text" placeholder="Add a movie...">
+            <button>Add</button>
+        </form>
+        <script src="movie.js" defer></script>
     </main>
 </body>
     <footer>
