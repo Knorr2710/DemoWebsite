@@ -148,7 +148,7 @@ td {
 	width: 300px;
 }
 
-button {
+.index button {
 	background-color: blue;
 	border: 1px solid gray;
 	border-radius: 5px;
@@ -264,7 +264,22 @@ a > img {
 a:hover {
 	text-decoration: underline;
 }
-	
+
+/* games.html */
+.games button{
+    background: #4B0082;
+    border: 0;
+    color: white;
+    padding: 15px;
+	margin: 15px;
+    border-radius: 20px;
+    transition: 0.4s ease;
+	width: 100px;
+  }
+
+div#pattern {
+	display: none;
+}
 
 @media screen and (min-width: 900px) {
 	.product-grid {
