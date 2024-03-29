@@ -36,8 +36,6 @@ function domLoaded() {
          let fahrenheit = parseFloat(fInput.value);
          let celcius = convertFtoC(fahrenheit);
          cInput.value = celcius;
-      } else {
-        errorMessage.innerHTML = "Please enter a number to convert";
       }
 
       // Change weather image
@@ -49,6 +47,11 @@ function domLoaded() {
          weatherImage.src = "images/temperImg/warm.png";
       }
 
+      // If no input
+      if (cInput.value.length == 0 && fInput.value.length == 0) {
+        errorMessage.innerHTML = "Please enter a number to convert";
+        weatherImage.src = "";
+      }
    })   
 }
 
