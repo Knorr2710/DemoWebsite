@@ -387,7 +387,7 @@ div#pattern {
  
 
 #add-movie button:hover {
-  background: darkgreen;
+  background: gray;
 }
 
  
@@ -405,6 +405,10 @@ div#pattern {
 }
 
 /* Temperature Converter */
+label {
+	display: block;
+}
+
 #errorMessage {
 	color: red;
  }
