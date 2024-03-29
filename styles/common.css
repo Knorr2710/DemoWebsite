@@ -265,6 +265,24 @@ a:hover {
 	text-decoration: underline;
 }
 
+/* Responsive */
+@media screen and (min-width: 900px) {
+	.product-grid {
+		grid-template-columns: repeat(4, 1fr);	
+	}
+	
+}
+
+@media screen and (max-width: 768px) {
+	.product-grid {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.product > a {
+		width: 275px;
+	}
+}
+
 /* games.html */
 .games button{
     background: #4B0082;
@@ -278,10 +296,12 @@ a:hover {
 	cursor: pointer;
   }
 
+/* Toggle Button */
 div#pattern {
 	display: none;
 }
 
+/* Add-remove List */
 #movie-list,
 #add-movie {
   margin: 30px;
@@ -384,20 +404,10 @@ div#pattern {
   line-height: 52px;
 }
 
-@media screen and (min-width: 900px) {
-	.product-grid {
-		grid-template-columns: repeat(4, 1fr);	
-	}
-	
-}
+/* Temperature Converter */
+#errorMessage {
+	color: red;
+ }
 
-@media screen and (max-width: 768px) {
-	.product-grid {
-		grid-template-columns: repeat(1, 1fr);
-	}
 
-	.product > a {
-		width: 275px;
-	}
-}
 

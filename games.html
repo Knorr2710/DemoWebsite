@@ -20,36 +20,58 @@
         </nav>
     </header>
     <main class="games">
-        <h2>Toggle Button</h2>
-        <div id ="pattern">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/SGtYOC15s0w?si=4jd934XkzBAcdWCD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div>
+            <h2>Toggle Button</h2>
+            <div id ="pattern">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/SGtYOC15s0w?si=4jd934XkzBAcdWCD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <button onclick="togglePattern()" id="togglePattern">Reveal!</button>
+            <script src="scripts/toggle.js" defer></script>
         </div>
-        <button onclick="togglePattern()" id="togglePattern">Reveal!</button>
-        <script src="script.js" defer></script>
-
-        <h2>Add-remove List</h2>
-        <div id="movie-list">
-            <h3>Movies to watch</h3>
-            <ul>
-                <li>
-                    <span class="name">Oppenheimer</span>
-                    <span class="delete">delete</span>
-                </li>
-                <li>
-                    <span class="name">Gran Turismo</span>
-                    <span class="delete">delete</span>
-                </li>
-                <li>
-                    <span class="name">Everything, Everywhere, All at Once</span>
-                    <span class="delete">delete</span>
-                </li>
-            </ul>
+        <div>
+            <h2>Add-remove List</h2>
+            <div id="movie-list">
+                <h3>Movies to watch</h3>
+                <ul>
+                    <li>
+                        <span class="name">Oppenheimer</span>
+                        <span class="delete">delete</span>
+                    </li>
+                    <li>
+                        <span class="name">Gran Turismo</span>
+                        <span class="delete">delete</span>
+                    </li>
+                    <li>
+                        <span class="name">Everything, Everywhere, All at Once</span>
+                        <span class="delete">delete</span>
+                    </li>
+                </ul>
+            </div>
+            <form id="add-movie" method="post" action="games.html">
+                <input type="text" placeholder="Add a movie...">
+                <button>Add</button>
+            </form>
+            <script src="scripts/movie.js" defer></script>
         </div>
-        <form id="add-movie" method="post" action="games.html">
-            <input type="text" placeholder="Add a movie...">
-            <button>Add</button>
-        </form>
-        <script src="movie.js" defer></script>
+        <div>
+            <script src="scripts/temp.js"></script>
+            <h2>Temperature Converter</h2>
+            <p>
+                <label for="cInput">Celcius:</label>
+                <input id="cInput" type="text">
+            </p>
+            <p>
+                <label for="fInput">Fahrenheit:</label>
+                <input id="fInput" type="text">
+            </p>
+            <p>
+                <input id="convertButton" type="button" value="Convert">
+            </p>
+            <p id="errorMessage"></p>
+            <p>
+                <img id="weatherImage" src="" alt="">
+            </p>
+        </div>
     </main>
 </body>
     <footer>

@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Delete movies
     let deleteBtn = document.querySelectorAll(".delete")
-    list.addEventListener("click", function(event) {
+    list.addEventListener("click", (event) => {
         if (event.target.className == "delete") {
             const li = event.target.parentElement;
             li.parentNode.removeChild(li);
