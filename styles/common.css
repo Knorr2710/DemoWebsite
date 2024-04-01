@@ -1,37 +1,57 @@
+/* General Styles */
 html {
 	font-family: 'Roboto', Arial, Helvetica, sans-serif;
 	color: black;
 }
 
+.title {
+    font-size: 25px;
+}
+
+button > a {
+	text-decoration: none;
+	color: whitesmoke;
+	transition: 0.2s ease-in-out;
+}
+
+button:hover {
+	background-color: gray;
+	transition: 0.2s ease-in-out;
+}
+
+/* Footer Styles */
 footer {
+	/* Add footer styles here */
 }
 
-.index hr {
-	border: dotted blue 6px;
-	border-bottom: none;
-	width: 4%;
-	margin: 100px auto;
-}
-
-.shop hr {
-	border: solid gray 1px;
-	border-bottom: none;
-	width: 80%;
-	margin: 10px auto;
-}
-  
+/* Main Styles */
 main {
 	display: flex;
-  	flex-direction: column;
-  	margin: 0 auto;
+	flex-direction: row;
+	margin: 0 auto;
 }
 
+
+div {
+	padding: 2px;
+}
+
+.container {
+	margin: 0 auto;
+}
+
+.left-container {
+	margin: 0 auto;
+}
+
+/* Header Styles */
 header {
 	border-bottom: 2px solid #e7e7e7;
 }
 
 header > nav {
-  border-bottom: 5px solid gray;
+	border-bottom: 5px solid gray;
+	border-radius: 10px;
 }
 
 header > nav > ul {
@@ -39,23 +59,24 @@ header > nav > ul {
 	flex-wrap: wrap;
 	align-items: center;
 	background-color: blue;
+	border-radius: 10px;
 	list-style: none;
 	padding: 0;
 	margin: 0;
 }
 
 header > nav > ul > li {
-  display: inline;
-  margin: 0 20px;
-  padding: 15px 0 15px 0;
+	display: inline;
+	margin: 0 20px;
+	padding: 15px 0 15px 0;
 }
 
 header > nav > ul > li > a {
-  text-decoration: none;
-  color: whitesmoke;
-  padding: 5px;
-  border-radius: 5px;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+	text-decoration: none;
+	color: whitesmoke;
+	padding: 5px;
+	border-radius: 5px;
+	transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 header > nav > ul > li > a:hover {
@@ -75,12 +96,14 @@ header > nav > ul > li > a.selected {
 	justify-content: center;
 }
 
+/* Container Styles */
 .container > h1 {
 	text-align: center;
 	text-decoration: underline;
 	margin: 30px 0;
 }
 
+/* Profile Styles */
 .profile {
 	display: flex;
 	color: black;
@@ -90,7 +113,6 @@ header > nav > ul > li > a.selected {
 	width: 400px;
 	padding: 20px;
 	text-align: center;
-	margin: 50px auto;
 	cursor: default;
 }
 
@@ -98,12 +120,6 @@ header > nav > ul > li > a.selected {
 	width: 70%;
 	border-radius: 60%;
 	margin: 20px 0 0 0;
-	transition: 0.2s ease-in-out;
-}
-
-.profile #kross-photo:hover {
-	width: 80%;
-	transition: 0.2s ease-in-out;
 }
 
 .profile .follow-button {
@@ -121,23 +137,7 @@ header > nav > ul > li > a.selected {
 	transition: 0.2s ease-in-out;
 }
 
-table {
-	border-collapse: collapse;
-	margin-left: auto;
-	margin-right: auto;
-	color: black;
-}
-
-table, th, td {
-	border: 1px solid black;
-	text-align: left;
-	padding: 10px;
-}
-
-td {
-	word-wrap: break-word;
-}
-
+/* Note Styles */
 .note {
 	color: black;
 }
@@ -148,29 +148,84 @@ td {
 	width: 300px;
 }
 
-.index button {
-	background-color: blue;
+/* Index Styles */
+.overview {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    width: 850px;
+}
+
+.edu-container {
+    margin: 10px 10px;
+}
+
+.index .edu {
+    margin: 15px 0 20px;
 	border: 1px solid gray;
+    border-radius: 10px;
+    padding: 13px;
+	width: 100%;
+}
+
+.degree, .institution, .duration {
+    margin: 0;
+}
+
+.sinstitution, .duration, .description {
+    color: gray;
+}
+
+.index .title {
+    margin: 10px 0;
+    color: blue;
+}
+
+.index label {
+    text-align: left;
+}
+
+.index hr {
+	border: dotted blue 6px;
+	border-bottom: none;
+	width: 4%;
+	margin: 100px auto;
+}
+
+.index label {
+	display: block;
+	margin: 0 0 10px 0;
+}
+
+.index input {
+	padding: 10px;
+	width: 100%;
+}
+
+.index textarea {
+    padding: 10px;
+    width: 100%;
+    height: 75px;
+}
+
+.index button {
+	display: block;
+	background-color: blue;
 	border-radius: 5px;
 	color: whitesmoke;
 	padding: 10px 20px;
 	margin: 20px 0;
 	transition: 0.2s ease-in-out;
+	cursor: pointer;
 }
 
-button > a {
-	text-decoration: none;
-	color: whitesmoke;
-	transition: 0.2s ease-in-out;
+#degreeError, #institutionError, #durationError, #descriptionError {
+	margin: 10px 0 20px 0;
+	font-size: 15px;
+	color: red;
 }
 
-button:hover {
-	background-color: gray;
-	transition: 0.2s ease-in-out;
-}
-
-/*bugg vcl*/
-
+/* Media Queries */
 @media only screen and (max-width: 768px) {
 	header > nav > ul > li {
 		margin: 0 10px;
@@ -181,7 +236,7 @@ button:hover {
 	}
 
 	.profile #kross-photo {
-		width: 50%;
+		width: 70%;
 	}
 }
 
@@ -190,6 +245,7 @@ button:hover {
 	text-decoration: underline;
 }
 
+/* Breadcrumb Styles */
 ul.breadcrumb {
 	padding: 10px 16px;
 	list-style: none;
@@ -217,7 +273,19 @@ ul.breadcrumb li a:hover {
 	text-decoration: underline;
 }
 
-/* shop.html */
+/* Shop Styles */
+.shop {
+	display: flex;
+	flex-direction: column;
+}
+
+.shop hr {
+	border: solid gray 1px;
+	border-bottom: none;
+	width: 80%;
+	margin: 10px auto;
+}
+
 .shop > h4 {
 	font-size: 1.5rem;
 	margin: 30px 15px 0;
@@ -236,7 +304,6 @@ ul.breadcrumb li a:hover {
 	flex-direction: column;
 	align-items: flex-start;
 }
-
 
 a > img {
 	border-radius: 5px;
@@ -265,12 +332,11 @@ a:hover {
 	text-decoration: underline;
 }
 
-/* Responsive */
-@media screen and (min-width: 900px) {
+/* Responsive Styles */
+@media screen and (min-width: 1000px) {
 	.product-grid {
-		grid-template-columns: repeat(4, 1fr);	
+		grid-template-columns: repeat(3, 1fr);	
 	}
-	
 }
 
 @media screen and (max-width: 768px) {
@@ -281,137 +347,125 @@ a:hover {
 	.product > a {
 		width: 275px;
 	}
+
+	main {
+		flex-direction: column;
+	}
+
+	.overview {
+		width: 85%;
+	}
 }
 
-/* games.html */
-.games button{
-    background: #4B0082;
-    border: 0;
-    color: white;
-    padding: 15px;
+/* Games Styles */
+.games {
+	display: flex;
+	flex-direction: column;
+}
+
+.games button {
+	background: #4B0082;
+	border: 0;
+	color: white;
+	padding: 15px;
 	margin: 15px;
-    border-radius: 20px;
-    transition: 0.4s ease;
+	border-radius: 20px;
+	transition: 0.4s ease;
 	width: 100px;
 	cursor: pointer;
-  }
+}
 
-/* Toggle Button */
+/* Toggle Button Styles */
 div#pattern {
 	display: none;
 }
 
-/* Add-remove List */
+/* Add-remove List Styles */
 #movie-list,
 #add-movie {
-  margin: 30px;
+	margin: 30px;
 }
-
- 
 
 #movie-list ul {
-  list-style-type: none;
-  padding: 0;
+	list-style-type: none;
+	padding: 0;
 }
-
- 
 
 #movie-list li {
-  padding: 20px;
-  border-left: 5px solid #ddd;
-  margin: 20px 10px;
+	padding: 20px;
+	border-left: 5px solid #ddd;
+	margin: 20px 10px;
 }
-
- 
 
 #movie-list li:hover {
-  border-color: #9361bf;
+	border-color: #9361bf;
 }
-
- 
 
 .delete {
-  float: right;
-  background: red;
-  padding: 6px;
-  border-radius: 4px;
-  cursor: pointer;
-  color: white;
+	float: right;
+	background: red;
+	padding: 6px;
+	border-radius: 4px;
+	cursor: pointer;
+	color: white;
 }
-
- 
 
 .delete:hover {
-  background: maroon;
+	background: maroon;
 }
-
- 
 
 #add-movie {
-  width: 400px;
-  margin: 0 auto;
+	width: 400px;
+	margin: 0 auto;
 }
-
- 
 
 #add-movie input {
-  display: block;
-  margin: 20px 0;
-  padding: 10px;
-  border: 1px solid #ccc;
-  font-size: 16px;
-  border-radius: 4px 0 0 4px;
-  box-sizing: border-box;
-  width: 300px;
-  float: left;
-  clear: both;
+	display: block;
+	margin: 20px 0;
+	padding: 10px;
+	border: 1px solid #ccc;
+	font-size: 16px;
+	border-radius: 4px 0 0 4px;
+	box-sizing: border-box;
+	width: 300px;
+	float: left;
+	clear: both;
 }
-
- 
 
 #add-movie button {
-  border: 1px solid #4B0082;
-  background: #4B0082;
-  padding: 10px 20px;
-  font-size: 16px;
-  display: inline-block;
-  margin: 0;
-  border-radius: 0 4px 4px 0;
-  cursor: pointer;
-  width: 100px;
-  margin: 20px 0;
-  border-left: 0;
-  color: white;
+	border: 1px solid #4B0082;
+	background: #4B0082;
+	padding: 10px 20px;
+	font-size: 16px;
+	display: inline-block;
+	margin: 0;
+	border-radius: 0 4px 4px 0;
+	cursor: pointer;
+	width: 100px;
+	margin: 20px 0;
+	border-left: 0;
+	color: white;
 }
-
- 
 
 #add-movie button:hover {
-  background: gray;
+	background: gray;
 }
-
- 
 
 #add-movie:after {
-  content: "";
-  display: block;
-  clear: both;
+	content: "";
+	display: block;
+	clear: both;
 }
-
- 
 
 #add-movie label {
-  line-height: 52px;
+	line-height: 52px;
 }
 
-/* Temperature Converter */
+/* Temperature Converter Styles */
 label {
 	display: block;
 }
 
 #errorMessage {
 	color: red;
- }
-
-
-
+}
