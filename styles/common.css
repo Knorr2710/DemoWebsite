@@ -2,6 +2,7 @@
 html {
 	font-family: 'Roboto', Arial, Helvetica, sans-serif;
 	color: black;
+	background-color: rgba(192, 214, 249, 0.5);
 }
 
 .title {
@@ -107,8 +108,8 @@ header > nav > ul > li > a.selected {
 .profile {
 	display: flex;
 	color: black;
-	background-color: whitesmoke;
-	border: 5px solid gray;
+	background-color: rgba(192, 214, 249, 0.5);
+	border: 2px solid gray;
 	border-radius: 15px;
 	width: 400px;
 	height: 80%;
@@ -119,14 +120,15 @@ header > nav > ul > li > a.selected {
 
 .profile #kross-photo {
 	width: 70%;
-	border-radius: 60%;
-	margin: 20px 0 0 0;
+	border-radius: 50%;
+	border: 1px solid gray;
+	margin: 30px 0 0 0;
 }
 
 .profile .follow-button {
 	display: inline-block;
 	background-color: #f8f8f8;
-	border: 1px solid #e7e7e7;
+	border: 1px solid #c7c7c7;
 	border-radius: 5px;
 	padding: 10px 20px;
 	margin: 20px 0 20px 0;
@@ -320,6 +322,10 @@ a:hover {
 
 /* Responsive Styles */
 @media  screen and (min-width: 768px) {
+	.index {
+		width: 95%;
+	}
+
 	.index hr {
 		display: none;
 	}
