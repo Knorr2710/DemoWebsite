@@ -111,6 +111,7 @@ header > nav > ul > li > a.selected {
 	border: 5px solid gray;
 	border-radius: 15px;
 	width: 400px;
+	height: 80%;
 	padding: 20px;
 	text-align: center;
 	cursor: default;
@@ -271,7 +272,7 @@ ul.breadcrumb li a:hover {
 	margin: 10px auto;
 }
 
-.shop > h4 {
+.entertainment > h4 {
 	font-size: 1.5rem;
 	margin: 30px 15px 0;
 }
@@ -310,7 +311,7 @@ a > img {
 }
 
 .product-qa img {
-	width: 120%;
+	width: 80%;
 }
 
 a:hover {
@@ -337,6 +338,10 @@ a:hover {
 
 	.product > a {
 		width: 275px;
+	}
+
+	.product-qa img {
+		width: 100%;
 	}
 
 	main {
