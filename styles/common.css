@@ -5,6 +5,16 @@ html {
 	background-color: rgba(192, 214, 249, 0.5);
 }
 
+main {
+	display: flex;
+	flex-direction: row;
+	margin: 0 auto;
+}
+
+footer {
+	padding: 1px;
+}
+
 .title {
     font-size: 25px;
 }
@@ -19,19 +29,6 @@ button:hover {
 	background-color: gray;
 	transition: 0.2s ease-in-out;
 }
-
-/* Footer Styles */
-footer {
-	/* Add footer styles here */
-}
-
-/* Main Styles */
-main {
-	display: flex;
-	flex-direction: row;
-	margin: 0 auto;
-}
-
 
 div {
 	padding: 2px;
@@ -192,7 +189,7 @@ header > nav > ul > li > a.selected {
 	border: dotted blue 6px;
 	border-bottom: none;
 	width: 4%;
-	margin: 100px auto;
+	margin: 50px auto;
 }
 
 .index label {
