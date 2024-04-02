@@ -135,20 +135,6 @@ body{
 /* Adjustments for mobile devices */
 @media screen and (max-width: 500px) {
     .game-container {
-        width: 90%; /* Adjust width to fit smaller screens */
         height: auto; /* Allow height to adjust based on content */
-    }
-
-    .grid {
-        grid-template-columns: repeat(4, 1fr); /* Adjust grid columns for smaller screens */
-        gap: 3px; /* Reduce gap between grid cells */
-    }
-
-    .score-container {
-        width: 90%; /* Adjust width to fit smaller screens */
-    }
-
-    #restart-btn {
-        width: 100%; /* Make restart button full width on smaller screens */
     }
 }
