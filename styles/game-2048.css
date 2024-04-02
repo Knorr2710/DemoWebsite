@@ -131,10 +131,3 @@ body{
         transform: scale(1);
     }
 }
-
-/* Adjustments for mobile devices */
-@media screen and (max-width: 500px) {
-    .game-container {
-        height: auto; /* Allow height to adjust based on content */
-    }
-}
