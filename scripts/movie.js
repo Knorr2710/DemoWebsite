@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
 
     const list = document.querySelector("#movie-list ul");
-    const forms = document.forms;
+    const forms = document.querySelector("form");
 
     // Delete movies
     let deleteBtn = document.querySelectorAll(".delete")

@@ -225,21 +225,6 @@ header > nav > ul > li > a.selected {
 	color: red;
 }
 
-/* Media Queries */
-@media only screen and (max-width: 768px) {
-	header > nav > ul > li {
-		margin: 0 10px;
-	}
-
-	.profile {
-		width: 300px;
-	}
-
-	.profile #kross-photo {
-		width: 70%;
-	}
-}
-
 .container .profile div h1 {
 	text-align: center;
 	text-decoration: underline;
@@ -333,6 +318,12 @@ a:hover {
 }
 
 /* Responsive Styles */
+@media  screen and (min-width: 768px) {
+	.index hr {
+		display: none;
+	}
+}
+
 @media screen and (min-width: 1000px) {
 	.product-grid {
 		grid-template-columns: repeat(3, 1fr);	
@@ -354,6 +345,20 @@ a:hover {
 
 	.overview {
 		width: 85%;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	header > nav > ul > li {
+		margin: 0 10px;
+	}
+
+	.profile {
+		width: 300px;
+	}
+
+	.profile #kross-photo {
+		width: 70%;
 	}
 }
 
