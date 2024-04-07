@@ -199,7 +199,7 @@ header > nav > ul > li > a.selected {
 .index hr {
 	border: dotted blue 6px;
 	border-bottom: none;
-	width: 4%;
+	width: 7%;
 	margin: 80px auto;
 }
 
@@ -329,6 +329,11 @@ a:hover {
 }
 
 /* Responsive Styles */
+.index, .shop, .games {
+	width: 95%;
+	margin: 0 auto;
+}
+
 @media  screen and (min-width: 768px) {
 	header > nav > ul {
 		justify-content: flex-start;
@@ -336,11 +341,6 @@ a:hover {
 
 	.index hr {
 		display: none;
-	}
-
-	.index, .shop, .games {
-		width: 95%;
-		margin: 0 auto;
 	}
 
 	div {
@@ -372,7 +372,7 @@ a:hover {
 	}
 
 	.overview {
-		width: 85%;
+		width: 95%;
 	}
 }
 
