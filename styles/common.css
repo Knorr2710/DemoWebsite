@@ -91,6 +91,7 @@ a.nav-link:hover {
 	display: flex;
 	color: black;
 	border: 2px solid gray;
+	box-shadow: 0px 3px 10px rgba(0,0,0,.25);
 	border-radius: 15px;
 	width: 400px;
 	height: 80%;
@@ -98,24 +99,42 @@ a.nav-link:hover {
 	text-align: center;
 }
 
-.profile #kross-photo {
+#kross-photo {
 	width: 70%;
 	border-radius: 50%;
 	border: 1px solid gray;
 	margin: 30px 0 50px 0;
 }
 
-.profile .follow-button {
+.follow-button {
 	display: inline-block;
+	font-size: 20px;
 	background-color: #f8f8f8;
 	border: 1px solid #c7c7c7;
+	box-shadow: 0px 3px 10px rgba(0,0,0,.25);
 	border-radius: 5px;
 	padding: 10px 20px;
-	margin: 20px 0 20px 0;
+	margin: 30px 1px 30px 1px;
 	transition: 0.2s ease-in-out;
 }
 
-.profile .follow-button:hover {
+.follow-button .instagram {
+	color: #f09433; 
+	color: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+	color: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+	color: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+
+.follow-button .spotify {
+	color: #1ED760;
+}
+
+.follow-button .github {
+	color: #333;
+}
+
+.follow-button:hover {
 	background-color: #e7e7e7;
 	transition: 0.2s ease-in-out;
 }
@@ -146,6 +165,7 @@ a.nav-link:hover {
 .index .edu {
     margin: 15px 0 20px;
 	border: 1px solid gray;
+	box-shadow: 0px 3px 10px rgba(0,0,0,.25);
     border-radius: 10px;
     padding: 13px;
 }
