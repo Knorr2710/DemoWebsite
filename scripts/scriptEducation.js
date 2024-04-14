@@ -3,13 +3,13 @@ const education = [
       degree: "Bachelor of Information Technology",
       institution: "RMIT University",
       duration: "2023 - 2027 (expected)",
-      description: ""
+      description: "Currently pursuing minor in Enterprise Development.<br>I am passionate about software development and always eager to learn new things."
     },
     {
       degree: "High School Diploma",
       institution: "Vo Thi Sau High School",
       duration: "2019 - 2022",
-      description: ""
+      description: "Graduated with a GPA of 8.0/10.<br>Participated in various extracurricular activities and competitions."
     }
 ];
 
