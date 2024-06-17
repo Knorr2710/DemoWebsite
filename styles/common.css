@@ -172,7 +172,6 @@ a.nav-link:hover {
 
 .index .title {
     margin-top: 70px;
-    color: blue;
 }
 
 .index label {
@@ -473,3 +472,60 @@ label {
 #errorMessage {
 	color: red;
 }
+
+/* Shop Category Styles */
+.shop-category {
+	display: flex;
+	justify-content: center;
+	margin: 20px 0;
+}
+
+.shop-category > button {
+	margin: 0 10px;
+	color: black;
+	text-decoration: none;
+	border: 1px solid gray;
+	padding: 10px 20px;
+	border-radius: 5px;
+}
+
+.category.netflix {
+	background-color: #e50914;
+	color: white;
+}
+
+.category.netflix:hover {
+	background-color: #b2070f;
+}
+
+.category.netflix:active {
+	background-color: #b2070f;
+}
+
+.category.spotify {
+	background-color: #1ED760;
+	color: white;
+}
+
+.category.spotify:hover {
+	background-color: #1DB954;
+}
+
+.category.spotify:active {
+	background-color: #1DB954;
+}
+
+.category.all {
+	background-color: #333;
+	color: white;
+}
+
+.category.all:hover {
+	background-color: #000;
+}
+
+/* Shop Product Styles */
+.hidden {
+	display: none;
+}
+
