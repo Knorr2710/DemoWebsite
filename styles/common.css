@@ -170,10 +170,6 @@ a.nav-link:hover {
     color: gray;
 }
 
-.index .title {
-    margin-top: 70px;
-}
-
 .index label {
     text-align: left;
 }
@@ -214,6 +210,10 @@ a.nav-link:hover {
 .container .profile div h1 {
 	text-align: center;
 	text-decoration: underline;
+}
+
+.music-container {
+	margin-top: 105px;
 }
 
 /* Breadcrumb Styles */
@@ -357,6 +357,10 @@ a:hover {
 
 	.profile #kross-photo {
 		width: 70%;
+	}
+
+	iframe {
+		width: 360px;
 	}
 }
 
