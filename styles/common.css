@@ -267,7 +267,7 @@ ul.breadcrumb li a:hover {
 	justify-items: center;
 	margin: 40px 15px 0 15px;
 	grid-template-columns: repeat(2, 1fr);
-	grid-gap: 50px;
+	grid-gap: 20px;
 }
 
 .product {
@@ -284,6 +284,11 @@ a > img {
 .product > a {
 	text-decoration: none;
 	color: black;
+}
+
+.product > a > h3 {
+	margin: 10px 0;
+	font-size: 0.9rem;
 }
 
 .product-qa .q {
@@ -478,6 +483,12 @@ label {
 }
 
 /* Shop Category Styles */
+.entertainment > h2 {
+	font-size: 2.25rem;
+	line-height: 2.5rem;
+	margin: 20px 0;
+}
+
 .shop-category {
 	display: flex;
 	justify-content: center;
@@ -487,7 +498,6 @@ label {
 .shop-category > button {
 	margin: 0 10px;
 	color: black;
-	text-decoration: none;
 	border: 1px solid gray;
 	padding: 10px 20px;
 	border-radius: 5px;
@@ -502,30 +512,13 @@ label {
 	background-color: #b2070f;
 }
 
-.category.netflix:active {
-	background-color: #b2070f;
-}
-
 .category.spotify {
 	background-color: #1ED760;
-	color: white;
+	color: black;
 }
 
 .category.spotify:hover {
 	background-color: #1DB954;
-}
-
-.category.spotify:active {
-	background-color: #1DB954;
-}
-
-.category.all {
-	background-color: #333;
-	color: white;
-}
-
-.category.all:hover {
-	background-color: #000;
 }
 
 /* Shop Product Styles */
