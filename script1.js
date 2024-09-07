@@ -24,10 +24,10 @@ const backgrounds = [
 let currentBackground = 0;
 
 // Function to change the background
-function changeBackground() {
-    currentBackground = (currentBackground + 1) % backgrounds.length; // Cycle through the backgrounds
-    header.style.backgroundImage = `url(${backgrounds[currentBackground]})`;
-}
+// function changeBackground() {
+//     currentBackground = (currentBackground + 1) % backgrounds.length; // Cycle through the backgrounds
+//     header.style.backgroundImage = `url(${backgrounds[currentBackground]})`;
+// }
 
 // Set the interval to change the background every 5 seconds (5000 ms)
 setInterval(changeBackground, 4000);
