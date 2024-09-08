@@ -57,7 +57,6 @@ nav ul li a.active, nav ul li a:hover {
 /* Introduction Section */
 .intro {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 50px 0;
     background: white;
@@ -148,6 +147,8 @@ p {
 
     .intro {
         flex-direction: column;
+        text-align: center;
+        height: calc(100vh - 50px);
     }
 
     .content {
@@ -173,6 +174,7 @@ p {
     .intro {
         flex-direction: column;
         text-align: center;
+        height: calc(100vh - 50px);
     }
 
     .avatar {
